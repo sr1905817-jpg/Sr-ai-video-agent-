@@ -3,7 +3,7 @@ import google.generativeai as genai
 import os
 
 # API Key yahan connect hogi
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+genai.configure(api_key=os.environ["AIzaSyCc-6TEO3LjdA0nCXsjslnLBVJPpLYFc50"])
 model = genai.GenerativeModel('gemini-1.5-pro')
 
 # Website ka design
