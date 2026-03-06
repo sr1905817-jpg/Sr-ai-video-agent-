@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 import os
 
-# API Key check karne ka naya smart tarika
+# API Key check karne ka smart tarika
 api_key = os.getenv("GEMINI_API_KEY")
 
 if not api_key:
@@ -11,29 +11,24 @@ else:
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel('gemini-1.5-pro')
 
-    # Website ka mast design
     st.title("🔥 The Khooni Agent - Viral Idea Generator")
     st.write("Ab kisi bhi niche mein viral content banao!")
 
-    # Nayi Drop-down list tumhari categories ke liye
     category = st.selectbox(
         "Video ki Category chuno:", 
         ["Gaming (BGMI/PUBG)", "Cartoon & Anime Story", "Comedy & Funny", "Tech & AI", "Dropshipping & Business", "Koi aur topic..."]
     )
 
-    topic = st.text_input("Exact topic kya hai? (Jaise: BGMI new update, AI se paise kamana, Tiger dog ka funny vlog, ya naya gadget):")
+    topic = st.text_input("Exact topic kya hai? (Jaise: BGMI update, AI tools, Tiger dog funny vlog):")
 
-    # Tumhara Advanced Master Prompt
     system_prompt = f"""
     Tum ek World-Class YouTube Strategist aur Creative Director ho. 
-    Mera channel multi-niche hai. 
-    Mera current Category: {category} hai.
-    Aur specific topic: {topic} hai.
+    Mera channel multi-niche hai. Category: {category} aur specific topic: {topic} hai.
 
     Mujhe 3 specific sections mein idea do:
-    1. THE VIRAL ANGLE: Ek unique aur entertaining story angle batao jo meri category ko suit kare. Agar comedy hai toh punchline batao, anime hai toh characters ka twist batao, tech/AI hai toh mind-blowing fact use karo.
-    2. THE CLICKABLE THUMBNAIL: Visual scene, background, aur text batao jo click karne par majboor kar de.
-    3. EDITOR'S BLUEPRINT: T dorending audio vibe aur editing style (jaise glitch effects, zoom-ins, fast pacing) batao.
+    1. THE VIRAL ANGLE: Ek unique story angle batao.
+    2. THE CLICKABLE THUMBNAIL: Visual scene, background, aur text batao.
+    3. EDITOR'S BLUEPRINT: Trending audio vibe aur editing style batao.
     Hinglish mein aur exciting tone mein jawab do.
     """
 
@@ -49,3 +44,4 @@ else:
         else:
             st.warning("Bhai pehle koi topic toh likh do!")
 
+            
