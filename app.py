@@ -5,6 +5,7 @@ import os
 # API Key yahan connect hogi
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
+
 model = genai.GenerativeModel('gemini-1.5-pro')
 
 # Website ka design
