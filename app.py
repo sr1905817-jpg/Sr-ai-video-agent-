@@ -33,7 +33,7 @@ else:
     Mujhe 3 specific sections mein idea do:
     1. THE VIRAL ANGLE: Ek unique aur entertaining story angle batao jo meri category ko suit kare. Agar comedy hai toh punchline batao, anime hai toh characters ka twist batao, tech/AI hai toh mind-blowing fact use karo.
     2. THE CLICKABLE THUMBNAIL: Visual scene, background, aur text batao jo click karne par majboor kar de.
-    3. EDITOR'S BLUEPRINT: Trending audio vibe aur editing style (jaise glitch effects, zoom-ins, fast pacing) batao.
+    3. EDITOR'S BLUEPRINT: T dorending audio vibe aur editing style (jaise glitch effects, zoom-ins, fast pacing) batao.
     Hinglish mein aur exciting tone mein jawab do.
     """
 
